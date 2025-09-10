@@ -121,7 +121,7 @@ parrot01$ curl -H "Host: dc-2" $IP
 
 ```sh
 # hosts ファイルに追記
-parrot01$ sudo sh -c "echo dc-2 $IP >> /etc/hosts" # hosts ファイルに追記
+parrot01$ sudo sh -c "echo $IP dc-2 >> /etc/hosts" # hosts ファイルに追記
 ```
 
 ```sh
@@ -224,7 +224,8 @@ parrot01$ echo -e "admin\njerry\ntom" > users.txt
 [CeWL](https://github.com/digninja/CeWL)を用いて辞書ファイルを生成する
 
 ```sh
-parrot01$ git clone https://github.com/diginja/CeWL && cd $_
+parrot01$ git clone https://github.com/digininja/CeWL
+parrot01$ cd CeWL
 parrot01$ sudo gem install bundler
 parrot01$ chmod u+x ./cewl.rb  # 実行権限を付与
 parrot01$ ./cewl.rb dc-2               # プログラムを確認
