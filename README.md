@@ -7,6 +7,6 @@
 - Internet Basics
     - [netcat](./unix/netcat.md)
     - [curl](./unix/curl.md)
-- CTF(Capture the Flag) Basics
+- [CTF(Capture the Flag) Basics](./ctf/README.md)
 - [Game Hacking(Cheating)](./cookieclicker/README.md)
 
