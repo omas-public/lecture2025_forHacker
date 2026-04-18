@@ -43,7 +43,7 @@ $ nc $HOSTNAME $PORT
 client
 
 ```sh
-$ HOSTNAME=192.168.56.101
+$ HOSTNAME=192.168.xxx.xxx
 $ PORT=5555
 $ nc -zv $HOSTNAME $PORT
 ```
@@ -62,7 +62,7 @@ client
 
 ```sh
 $ PORT=5555
-$ HOSTNAME=192.168.56.101
+$ HOSTNAME=192.168.xxx.xxx
 $ FILE='/etc/passwd'
 $ nc $HOSTNAME $PORT < FILE
 $ ^C
@@ -85,7 +85,7 @@ client
 
 ```sh
 $ PORT=8000
-$ SERVER=192.168.56.101
+$ SERVER=192.168.xxx.xxx
 $ nc $SERVER $PORT
 > GET / HTTP/1.0
 > CRLF
@@ -112,7 +112,7 @@ $ nc www.it-college.ac.jp 80
 メイル送信
 
 ```sh
-$ MAIL_SERVER=192.168.56.101
+$ MAIL_SERVER=192.168.xxx.xxx
 $ PORT=25
 $ nc $MAIL_SERVER $PORT
 > EHLO
@@ -127,7 +127,7 @@ $ nc $MAIL_SERVER $PORT
 メイルを読む
 
 ```sh
-$ MAIL_SERVER=192.168.56.101
+$ MAIL_SERVER=192.168.xxx.xxx
 $ PORT=110
 $ nc $MAIL_SERVER $PORT
 > USER ユーザー名
