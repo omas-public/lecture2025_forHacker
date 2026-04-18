@@ -30,7 +30,7 @@ $ nc -l -p $PORT -e $SHELL
 client
 
 ```sh
-$ HOSTNAME=192.168.56.101
+$ HOSTNAME=192.168.xxx.xxx
 $ PORT=5555
 $ nc $HOSTNAME $PORT
 > cd ~/Desktop
